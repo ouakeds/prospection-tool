@@ -15,28 +15,21 @@ interface ICustomDialog {
 const CustomDialog: React.FC<ICustomDialog> = ({handleClose, open}) => {
     return (  
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Nouveau Client</DialogTitle>
+        <DialogTitle>Nouveau Contrat</DialogTitle>
 
         <DialogContent sx={{p: 6, mt: 4}}>
-
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <TextField autoFocus margin="dense" id="company" label="Société" type="company" fullWidth variant="standard" />
+              <TextField autoFocus margin="dense" id="company" label="Société" type="string" fullWidth variant="standard" />
             </Grid>
             <Grid item xs={6}>
-              <TextField autoFocus margin="dense" id="firstName" label="Prénom" type="firstName" fullWidth variant="standard" />
+              <TextField autoFocus margin="dense" id="firstName" label="Prénom" type="string" fullWidth variant="standard" />
             </Grid>
             <Grid item xs={6}>
-              <TextField autoFocus margin="dense" id="lastName" label="Nom" type="lastName" fullWidth variant="standard"/>
-            </Grid>
-            <Grid item xs={6}>
-              <TextField autoFocus margin="dense" id="email" label="Email" type="email" fullWidth  variant="standard"/>
-            </Grid>
-            <Grid item xs={6}>
-              <TextField autoFocus margin="dense" id="phone" label="Téléphone" type="phone" fullWidth  variant="standard" />
+              <TextField autoFocus margin="dense" id="lastName" label="Nom" type="string" fullWidth variant="standard"/>
             </Grid>
             <Grid item xs={12}>
-              <TextField autoFocus margin="dense" id="source" label="Source" type="source" fullWidth variant="standard" />
+              <TextField autoFocus margin="dense" id="project" label="Projet" type="string" fullWidth  variant="standard"/>
             </Grid>
           </Grid>
         </DialogContent>

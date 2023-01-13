@@ -7,4 +7,4 @@ export default interface Contract {
     endDate?: Date;
     status: string;
     git: string;
-  }
+}

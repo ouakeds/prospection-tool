@@ -1,7 +1,7 @@
 import { Typography, Card, Button } from '@mui/material';
 import CustomizedTables from '../../components/Table';
 import DefaultLayout from '../../layouts/DefaultLayout';
-import CustomDialog from './CustomerDialog';
+import ContractDialog from './ContractDialog';
 import { useState } from 'react';
 import Contract from '../../types/contract.interface';
 
@@ -49,7 +49,7 @@ const ContractPage: React.FC = () => {
     return (
         <DefaultLayout>
             <>
-                <CustomDialog open={open} handleClose={handleClose}/>
+                <ContractDialog open={open} handleClose={handleClose}/>
 
                 <Card sx={{display: 'flex', mb: 2, p: 2, justifyItems: 'center'}}>
                     <Typography
